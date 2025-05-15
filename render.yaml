@@ -1,9 +1,13 @@
 services:
   - type: web
-    name: flask-backend
+    name: nba-player-api
     env: python
-    buildCommand: ""
-    startCommand: python api.py
+    region: oregon
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python api.py"
     envVars:
-      - key: PYTHON_VERSION
-        value: 3.11
+      - key: FLASK_ENV
+        value: production
+    runtime: python
+    pythonVersion: 3.10
