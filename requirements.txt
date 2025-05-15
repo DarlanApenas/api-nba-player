@@ -1,2 +1,5 @@
-Flask
-flask-cors
+Flask==2.3.3
+flask-cors==4.0.0
+nba_api==1.1.14
+requests==2.31.0
+urllib3==1.26.18
